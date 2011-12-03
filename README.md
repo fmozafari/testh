@@ -40,12 +40,7 @@ angel::state_preparation_parameters qsp_ps;
 angel::state_preparation_statistics qsp_st;
 tweedledum::Circuit network;
 
-/* run the uniform quantum state preparation */
-angel::qsp_deps<decltype(network), decltype( esop ), decltype( random )>( network, esop, random, tt, qsp_ps, qsp_st);
-qsp_st.report();
-tweedledum::print(network);
 
-```
 
 
 Note that angel does not work on windows currently.
